@@ -1,0 +1,25 @@
+<div class="container-fluid loginbg">
+    <div class="centered">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card text-center py-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Walcome to Airline</h5>
+                        <p class="card-text my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="btn btn-primary" type="button" (click)="loginWithGoogle()">
+                            <i class="bi bi-google"></i> Login with Google</a>
+                        <div>
+                            <a class="btn" (click)="skipLogin()">Skip Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="api.isSpinner" class="d-flex justify-content-center full-spinner">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>

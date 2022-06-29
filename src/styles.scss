@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+a {
+    cursor: pointer;
+}
+
+sup {
+    color: red;
+    font-size: 14px;
+}
+
+.main-section {
+    margin: 40px 0;
+}
+
+.full-spinner {
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    align-items: center;
+    background: #d8d8d878;
+}
+
+.spinner-border {
+    width: 4rem !important;
+    height: 4rem !important;
+}

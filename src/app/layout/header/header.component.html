@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand">Airline</a>
+
+        <!-- this.gs.loggedInUser -->
+        <div *ngIf="gs.loggedInUser && gs.loggedInUser._id" class="collapse navbar-collapse"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <h5>{{gs.loggedInUser.name}}
+                        <a (click)="gs.logout()">
+                            <i class="bi bi-box-arrow-right ms-3" title="Logout"></i></a>
+                    </h5>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
